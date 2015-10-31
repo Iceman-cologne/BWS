@@ -1,0 +1,591 @@
+body {
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    color: #000000;
+    background-color: #FFFFFF;
+    margin: 0px;
+    padding: 0px
+}
+
+p {
+    margin: 0.8em 0
+}
+td {
+    vertical-align: top;
+    font-size: 13px
+}
+th {
+    vertical-align: top;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold
+}
+h1 {
+    font-size: 165%
+}
+h2 {
+    font-size: 115%;
+    margin: 1.5em 0 0.8em 0
+}
+h3 {
+    font-size: 100%
+}
+hr {
+    height: 0px; color: transparent; background-color: transparent;
+    border-bottom: 1px solid #CCCCCC
+}
+a:link,
+a:visited { color: #605287;  }
+a:hover,
+a:active,
+a:focus { color: #FF9900;  }
+
+table.middle td {
+    vertical-align: middle
+}
+div.message {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #CCCCCC
+}
+div.prompt {
+    text-align: center;
+    width: 320px;
+    padding: 16px 20px 32px 20px;
+    margin: 60px auto;
+    border: 1px solid #999999
+}
+textarea,
+input,
+select {
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    vertical-align: middle;
+    margin-top: 0px
+}
+
+
+div#feedback p {
+    overflow:hidden;
+
+}
+
+/* DIV alignment */
+div.aright { margin-left: auto }
+div.acenter { margin-left: auto; margin-right: auto }
+
+div.title				{ font-weight: bold; margin-bottom: 4px; }
+div.title p				{ margin: 0px 0px 0.5em 0px;  }
+div.explanation			{  }
+div.explanation p		{ margin: 0px 0px 0.5em 0px }
+div.title > p:first-child,
+div.explanation > p:first-child { margin-top: 0 }
+div.title > p:last-child,
+div.explanation > p:last-child { margin-bottom: 0 }
+div.trouble { color: #EE3300 }
+div.titleSpacing { margin-top: 12px;  }
+div.border { border: 1px solid #CCCCCC; padding: 9px 8px }
+
+div.question   { }
+div.head       { font-weight: bold; font-weight: normal; padding: 0px 0px 3px 3px; vertical-align: bottom; }
+
+div.selscale div.value_text {
+    text-align: center;
+    padding: 5px 10px; padding: 10px 0px 2px 0px;
+}
+div.selscale div.wedge {
+    margin-bottom: 4px
+}
+div.selscale div.numbering {
+    text-align: center; font-size: 11px; padding: 2px 0px 1px 0px;
+}
+div.selscale div.input {
+    text-align: center
+}
+
+table.question {
+    table-layout: fixed;
+    border-collapse: collapse
+}
+table.question th {
+
+    font-weight: bold; font-weight: normal; padding: 0px 0px 3px 3px; vertical-align: bottom;
+}
+table.question th.value_text { vertical-align: bottom; text-align: center; padding: 10px 0px 2px 0px; }
+table.question th.value_text_left { padding-left: 6px; text-align: left }
+table.question th.value_text_right { padding-right: 4px; text-align: right }
+table.question td.value_label,
+table.question div.value_label { padding: 10px 0px 2px 0px; }
+table.question th.numbering,
+table.question td.numbering { vertical-align: bottom; text-align: center; font-size: 11px; padding: 2px 0px 1px 0px; }
+table.question div.polarMiddle { text-align: center; font-size: 11px; padding: 2px 0px 1px 0px; }
+table.question div.slider { position: relative; background-repeat: no-repeat }
+table.question div.sliderButton { position: absolute; left: 0px; top: 0px; background-repeat: no-repeat }
+
+table.question td { padding: 3px 4px; vertical-align: middle }
+table.question td.closeRight { text-align: right; padding-right: 0px }
+table.question td.closeLeft { text-align: left; padding-left: 0px }
+table.question td.nopad-x { padding-left: 0px; padding-right: 0px }
+table.question td.itemtext {  }
+
+table.question td.item { padding-top: 8px;  padding-bottom: 8px;  }
+table.question td.option {  padding-top: 4px;  padding-bottom: 4px;  }
+
+table.question th.opener {  }
+table.question th.opener,
+table.question td.opener,
+div.question div.opener {
+    font-weight: bold; font-weight: normal; padding: 0px 0px 3px 3px; vertical-align: bottom;
+}
+table.question td.subheading { font-weight: bold; font-weight: normal; padding: 0px 0px 3px 3px; vertical-align: bottom; }
+table.question th.subheading { font-weight: bold; font-weight: normal; padding: 0px 0px 3px 3px; vertical-align: bottom;; vertical-align: bottom; padding-bottom: 2px; padding-top: 6px }
+table.question td.anchor,
+div.question div.anchor {  }
+div.shadeF0,
+li.shadeF0,
+table.question tr.shadeF0 td,
+table.question tr.shadeF1 td.invShade { background-color: transparent;  }
+div.shadeF1,
+li.shadeF1,
+table.question tr.shadeF1 td { background-color: #EEEEEE;  }
+table.question tr.shadeF0 td.invShade { background-color: #EEEEEE;  }
+table.question tr.shadeH0 td,
+table.question tr.shadeH1 td.invShade { background-color: #EEEEEE;  }
+table.question tr.shadeH1 td,
+table.question tr.shadeH0 td.invShade { background-color: transparent;  }
+table.question tr.hover:hover td,
+div.hover:hover { background-color: #FFF6C0;  }
+
+
+
+
+/* Screen reader optimized display */
+ul.items { list-style-type: none; padding: 0px; margin: 0px }
+ul.items li { padding: 3px 4px }
+ul.items li input { vertical-align: middle }
+li.trouble { color: #EE3300 }
+ul.items li.select,
+ul.items li.checkbox { padding-left: 25px; text-indent: -25px }
+
+table.question th.gapline,
+table.question td.gapline { padding: 0px; border-left: 2px solid #CCCCCC; }
+table.question th.dont_know { padding-left: 2px; padding-right: 2px; border-left: 2px solid #CCCCCC; }
+table.question td.dont_know { text-align: center; border-left: 2px solid #CCCCCC; }
+table.question td.input			{ }
+table.question td.input select,
+table.question td.input input[type=text] { vertical-align: baseline }
+table.question th.wedge			{ text-align: center; padding-left: 0px; padding-right: 0px }
+table.question td.spacer		{ padding: 0px; overflow: hidden }
+table.question th.spacer		{ padding: 0px; overflow: hidden }
+table.question td.text 			{ vertical-align: middle;  }
+table.question td.rank			{ text-align: right; padding-right: 4px }
+table.question td.rank select	{ text-align: center; width: 42px }
+table.question td.float			{ text-align: left; padding: 2px 4px 2px 4px }
+table.question td.float input	{ vertical-align: baseline }
+table.question td.float input.trouble	{ border: 2px solid #EE3300 }
+table.question td.balloon		{  }
+table.question td.balloon p		{ font-size: 10px; margin: 0px 0px 4px 0px; }
+table.question td.balloon textarea	{ font-size: 11px; border: 1px solid #CCCCCC; }
+table.question td.balloon textarea.trouble { border: 2px solid #EE3300 }
+table.question td.select,
+table.question td.select.itemtext textarea {
+    vertical-align: middle;
+}
+table.question td.checkbox,
+table.question td.checkbox.itemtext textarea {
+    vertical-align: middle;
+}
+table.question td.dropdown		{ }
+table.question td.selscale		{ text-align: center; }
+table.question td.scale			{ text-align: center; vertical-align: middle;  }
+table.question td.polar			{ text-align: center; vertical-align: middle;  }
+table.question td.dropdown		{}
+table.question td.left_pol		{ text-align: right }
+table.question td.right_pol		{ text-align: left }
+table.question td.padding		{ padding: 2px 4px 2px 4px; }
+table.question td.contact		{ vertical-align: top; padding-top: 3px; padding-bottom: 5px }
+table.question input.number		{ text-align: right }
+table.question td.trouble		{ color: #EE3300 }
+table.question tr.trouble > td.extended {
+    border: 2px solid #EE3300;
+}
+table.question table.llabels { table-layout: fixed }
+table.question table.llabels td { padding: 0px }
+table.question table.llabels td.vlabel { vertical-align: middle }
+
+table.question td.container			{ padding: 0px }
+table.question th.container			{ padding: 0px; text-align: left; padding: 10px 0px 2px 0px; }
+table.question td.container td		{ padding: 0px }
+table.question td.container	div		{ position: relative; height: 16px }
+table.question td.container input,
+table.question td.container button,
+table.question td.container div.inputCST	{ position: absolute; text-align: center; margin-left: 0px; margin-right: 0px }
+table.question td.container button.input	{ position: absolute }
+table.question div.numbering		{ clear: both; position: relative; width: 100%; height: 16px }
+table.question div.numbering div	{ position: absolute; text-align: center; white-space: nowrap; overflow: hidden; font-size: 11px; padding: 2px 0px 1px 0px; }
+table.question td.blank				{ padding: 0px }
+
+table.question th.separateB,
+table.question td.separateB,
+table.question div.separateB { border-top: 2px solid #CCCCCC; }
+table.question th.separateR,
+table.question td.separateR { border-left: 2px solid #CCCCCC; }
+table.question td.residual {  }
+
+div.spacingV1 { height: 1em }
+div.spacingV2 { height: 0.5em }
+
+div.dots		{ margin-left: 16px; text-indent: -16px; }
+label.dots		{ display: block; margin-left: 16px; text-indent: -16px; }
+label.dots *,
+div.dots * { text-indent: initial }
+table.question div.right		{ text-align: right; }
+table.question div.left			{ text-align: left; }
+
+table.right  { margin-left: auto }
+table.center { margin-left: auto; margin-right: auto }
+
+table td.left	{ text-align: left }
+table td.right	{ text-align: right }
+table td.center	{ text-align: center }
+table th.center	{ text-align: center }
+div.head div.header,
+table th.header { vertical-align: top; text-align: center; padding-bottom: 6px }
+div.extended,
+table td.extended { padding: 10px 0px 20px 0px }
+div.extendedItem { padding: 0px 4px 8px 4px }
+
+table.container { margin-top: 12px;  table-layout: fixed }
+table.container div.rankingTgt	{ font-size: 18px; font-weight: bold; color: #AAAAAA; border: 1px solid #AAAAAA; margin-bottom: 2px }
+table.container div.rankingHgL	{ background-color: #FFF6C0;  }
+table.container div.rankingTkn	{ font-weight: bold; border: 1px solid #000000; background-color: #EEEEEE;  }
+table.container div.rankingGry	{ font-weight: bold; border: 1px solid #AAAAAA; background-color: #EEEEEE; color: #AAAAAA }
+div.rankingContainer { position: relative; display: block; margin-top: 24px }
+
+table.assignment tr.options td { text-align: center; font-size: 18px }
+table.assignment tr.options td.disabled { color: #CCCCCC;  }
+table.assignment tr.options td.selected { color: #FF9900;  }
+table.assignment td.stimulus         { vertical-align: middle; text-align: center; font-size: 30px; padding: 20px 0px; font-weight: bold }
+table.assignment td.introduction	 { vertical-align: middle; text-align: center; font-size: 18px; padding: 20px 0px }
+
+/* SelClick */
+div.selClick { margin-bottom: 42px;  }
+div.selClickSubs { margin-top: 32px }
+div.selClickQuestion { margin-bottom: 12px;  }
+.selClickOption {
+    padding: 8px; margin: 12px 0px;
+    border-width: 2px;  border-style: solid;
+    border-color: #CCCCCC;
+    background-color: #EEEEEE;
+}
+.selClickNoScript { padding: 0px 0px 0px 25px; text-indent: -25px; border: 0px none; margin-bottom: 8px }
+.selClickOption input.option { vertical-align: top }
+.selClickAvailable {
+    border-color: #CCCCCC;
+    background-color: transparent;
+}
+.selClickAvailable:hover {
+    background-color: #FFF6C0;
+}
+.selClickSelected {
+    border-color: #FF9900;
+    background-color: #FFF6C0;
+}
+
+/* Marker */
+div.Marker table { table-layout: fixed }
+div.Marker span.marker { display: block; float: left; margin-right: 0.75em; padding-top: 0.1em }
+div.Marker span.desc { display: block; overflow: hidden }
+div.Marker div.back { float: left }
+div.Marker div.spacer { float: left; width: 1px }
+div.Marker div.legend { float: right }
+div.Marker div.legend div.type { margin-bottom: 16px }
+div.Marker div.legend div.type:last-child { margin-bottom: 0 }
+div > div.Marker { margin-top: 2em }
+
+.SelBox {
+    border-width: 2px;  border-style: solid;
+    border-color: #CCCCCC;
+    background-color: transparent;
+}
+.SelBox:hover,
+.SelBox.hover {
+    background-color: #FFF6C0;
+}
+.SelBox.inactive {
+    border-color: #CCCCCC;
+    background-color: #EEEEEE;
+}
+.SelBox.selected {
+    border-color: #FF9900;
+    background-color: #FFF6C0;
+}
+
+/* Text */
+input.wordgap {
+    font-family: "Courier New","Courier",monospaced;
+    font-size: 15px; letter-spacing: 1px;
+    padding: 0px; margin: 0px 1px; border: 0px none;
+    background-image: url("../images/text.char10px.png");
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+    vertical-align: bottom
+}
+
+/* Extended Selection */
+div.subheader { padding: 2px 0px; margin-top: 2px }
+div.subspacing  { margin-top: 5px }
+div.accent { font-weight: bold }
+div.subheader button { vertical-align: top; padding: 0px; margin: 0px; border: 0px none; background-color: transparent }
+div.subselect { margin-left: 20px; margin-bottom: 2px }
+div.suboption { padding: 2px 0px }
+div.suboption,
+div.subheader { text-indent: -1.8em; padding-left: 1.8em }
+div.subheader input,
+div.subheader button,
+div.subheader div.inputCST,
+div.suboption input,
+div.suboption button,
+div.suboption div.inputCST { vertical-align: middle }
+div.shadeA { background-color: #EEEEEE;  }
+div.shadeB { background-color: transparent;  }
+
+/* Language selection */
+div.languageSelection { text-align: center; margin: 80px 0px 60px 0px; min-height: 260px }
+div.languageSelection div.option {
+    margin: 20px 40px; vertical-align: top;
+    /* inline-block hack from http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/ */
+    display:-moz-inline-stack;
+    display:inline-block;
+    zoom:1;
+    *display:inline
+}
+div.languageSelection div.flag { width: 80px }
+div.languageSelection div.desc { width: 80px; font-weight: bold; padding-top: 10px }
+div.languageSelection img { border: 0px none }
+div.languageSelection a { text-decoration: none; color: #000000 }
+
+div.feedback { border: 2px solid #EE3300; padding: 0px 8px; margin: 32px 0px }
+.spacing	{ margin-bottom: 42px;  }
+div.spacing   table.question { margin-bottom: 0px }
+div.center	{ text-align: center; display: table-cell; vertical-align: middle }
+
+div.progressbar {
+    position: relative; height: 16px;
+    overflow: hidden;
+    line-height: 1em;
+
+    border: 1px solid;
+    border-color: #CCCCCC;
+}
+div.progressbar div.progress {
+    position: absolute; left: 0px; top: 0px; height: 100%;
+    background-color: #CCCCCC;
+}
+div.progressbar div.progresstext {
+    font-size: 11px; top: 1px;
+    position: absolute; width: 100%;
+    white-space: nowrap;
+
+    text-align: center
+}
+
+/* TextElement formatting */
+
+div.info { }
+div.info div.title { text-align: center; padding: 3px 16px; background-color: #CCCCCC; color: white; margin-bottom: 0 }
+div.info div.content { background-color: #FFF6C0; border: 2px solid #CCCCCC; padding: 14px 16px 14px 16px }
+div.info div.symbol { position: relative }
+div.info div.symbol div.content { min-height: 40px; padding-left: 72px }
+div.info div.symbol div.content:before { position: absolute; left: 16px; top: 16px; content:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAAXNSR0IArs4c6QAAABtQTFRFLJSZZWf+e37/h4b/np7/v8D/1tT+7u7//v/9vLRj8wAAAAF0Uk5TAEDm2GYAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAARVJREFUKM99kz1vwkAMhm8qtzoQ6HoSQ1Ym5jKgrKhSdSOpVCkjGVAzho+Q92dzQbbzoQgvcZ74jX22zxg2C1RmaLb5261/ygG2jw0Fm+c9amti8x1tnMCo1MADqcUSyuK4aX/sh4EeRRcqWUpcSEJtwRDI2seqDbWS2r/+SVHVU9Nixx8DvNDIPoM6G8NlZexmDOeVmenL/s7OyXwI2+LB3lGTL6DQG9HkOcRNzZW97wQ3dhOFlKJQeNemI1O5nrLElyaSkiLAaUkzLakhLV6OGWuZ4ZjSkJWWGRoirUtwXTppnaRPUf87bTKPwwO/pOPgwXmw5DU41m/PrhvRcGu6van70L9bsMlVnF7ayfWevgijK/MEnOpiQU7a57EAAAAASUVORK5CYII=) }
+div.info div.content > p:first-child { margin-top: 0 }
+div.info div.content > p:last-child { margin-bottom: 0 }
+
+div.warning { }
+div.warning div.title { text-align: center; padding: 3px 16px; background-color: #EE3300; color: white; margin-bottom: 0 }
+div.warning div.content { background-color: #FFCCCC; border: 2px solid #EE3300; padding: 14px 16px 14px 16px }
+div.warning div.symbol { position: relative }
+div.warning div.symbol div.content { min-height: 40px; padding-left: 72px }
+div.warning div.symbol div.content:before { position: absolute; left: 16px; top: 16px; content:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAAXNSR0IArs4c6QAAABtQTFRF9u7c/0U5/1pN/3ty/6ig/8G9/tbS++Th/v77nLqEMAAAAAF0Uk5TAEDm2GYAAAEHSURBVCjPbVMtE8IwDK3iasM2mOUQYAGDneGwuEkEd2ABgxxf2/vZbGuSFmhMc+/yLi95qTEcFqjMd1gcltPNN2zfC2ojKasQI44AbSYCDm9auCONTEpfFMSWC4u+yRHX7k1dqeuSA3C9+sKzgE2fjLtS61qPgNoJqJRNGcBZx7+7NAVYRe5FJsBTpdoFzwIwJ2lBUX3DmbPKDAQ8Qabd+xm3KHTS5z+4Ng8B1+CWNPfgHBMFlZ5DOb7RuPYrVUmZGrX34lPl+DGJpE83prq2CrzjNdAMF12dLJnKcMlsB4lxvR1sXLu6wDjhl2xHGRwDZc0uOIbo2cQPLHqK8aONnnf8I/x8mQ9sZmJrIWiXtQAAAABJRU5ErkJggg==) }
+div.warning div.content > p:first-child { margin-top: 0 }
+div.warning div.content > p:last-child { margin-bottom: 0 }
+
+div.chapter { }
+div.chapter h1 { }
+
+
+/* Debug information */
+div.debugID	{ margin: 2px 0px; font-weight: bold; font-size: 11px; color: #BBAABB; text-align: right }
+div.debug	{ margin: 0px 0px 32px 0px; padding: 8px 8px 6px 8px; border: 2px solid #BBAABB; color: #999999 }
+div.debug p { margin: 0px 0px 7px 0px }
+div.debugAnchor { position: relative; float: right; width: 0; height: 0 }
+div.debugNote { position: absolute; left: 40px; width: 198px; border: 1px solid #666666; z-index: 1; font-size: 12px; line-height: 1.3em }
+div.debugNote:hover { z-index: 2 }
+div.debugNote div.title { background-color: #FFFF00; border-bottom: 0 none; color: #666666; padding: 2px 4px; font-weight: bold; }
+div.debugNote div.content { background-color: #FFFFFF; border: 2px solid #FFFF00; border-top: 0 none; color: #666666; padding: 4px 4px 0px 4px }
+div.debugNote div.content p { padding: 0px; margin: 0px 0px 6px 0px }
+span.debug	{ color: #BBAABB; font-weight: bold }
+h2.debug	{ background-color: #BBAABB; color: #FFFFFF; padding: 2px 10px 0px 10px; margin-bottom: 0px }
+
+input.button					{  }
+img.left						{ float: left; margin: 0px 16px 8px 0px }
+img.right						{ float: right; margin: 0px 0px 8px 16px }
+
+/* Solution for text inputs with 100% width */
+div.textinput,
+table.question td.textinput { padding-right: 8px }
+div.textinput textarea,
+table.question td.textinput textarea { padding-left: 2px; padding-right: 2px }
+div.textinput input,
+table.question td.textinput input { padding-left: 2px; padding-right: 2px }
+
+/* Suggestion Question */
+div.suggestion { border: 1px solid black }
+div.suggestion div.item { padding: 3px 5px; cursor: default }
+div.suggestion div.item:hover { background-color: #316AC5; color: #FFFFFF }
+select.suggestion { width: 100% }
+
+/* SelZoom Question */
+div.selzoom div.option { float: left }
+div.selzoom div.option div.box {
+    display: table-cell;
+    vertical-align: middle;
+}
+div.selzoom div.option div.box.border,
+div.selzoom div.option img.border {
+    padding: 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent
+}
+div.selzoom div.option div.box.border.always,
+div.selzoom div.option img.border.always {
+    border-color: #CCCCCC;
+}
+div.selzoom div.option div.box.border:hover,
+div.selzoom div.option div.box.border:focus,
+div.selzoom div.option img.border:hover,
+div.selzoom div.option img.border:focus,
+div.selzoom div.option.selected div.box.border,
+div.selzoom div.option.selected div.box.border.always,
+div.selzoom div.option.selected img.border {
+    border-color: #FF9900;
+}
+div.selzoom div.option div.text { margin: 0px 20px; text-align: center }
+div.selzoom div.option div.input { text-align: center; margin-top: 6px }
+
+/* IAT question */
+div.iat {  }
+div.iat div.schemeBlack {  }
+div.iat div.schemeWhite {  }
+div.iat div.frame { width: 560px; padding: 16px; height: 440px; border: 4px solid black; position: relative }
+div.iat div.unused { display: none }
+div.schemeBlack div.frame { border: 4px solid black; color: black }
+div.schemeWhite div.frame { border: 4px solid white; color: white; background-color: black }
+div.iat table.categories { width: 100%; height: 25% }
+div.iat table.categories td { font-size: 20px; font-weight: bold; padding: 4px 0 }
+div.iat table.categories td.or { color: gray; font-weight: normal; font-size: 14px; padding: 8px 0 }
+div.iat table.categories td.left { text-align: left }
+div.iat table.categories td.center { text-align: center }
+div.iat table.categories td.right { text-align: right }
+div.iat table.categories td div.exemplars { font-weight: normal; margin-top: 4px }
+div.schemeBlack table.categories td.dim0 { color: #000000 }
+div.schemeBlack table.categories td.dim1 { color: #0000FF }
+div.schemeBlack div.stim0,
+div.schemeBlack span.stim0 { color: #000000 }
+div.schemeBlack div.stim1,
+div.schemeBlack span.stim1 { color: #0000FF }
+div.schemeWhite table.categories td.dim0 { color: #FFFFFF }
+div.schemeWhite table.categories td.dim1 { color: #00FF00 }
+div.schemeWhite div.stim0,
+div.schemeWhite span.stim0 { color: #FFFFFF }
+div.schemeWhite div.stim1,
+div.schemeWhite span.stim1 { color: #00FF00 }
+div.iat div.explanation { display: none; position: absolute; bottom: 0px; left: 16px; right: 16px }
+div.iat div.explanation p { margin-bottom: 18px }
+div.iat div.explanation p.spcBelow { margin-bottom: 60px }
+div.iat table.stimulus { position: absolute; left: 0px; top: 0px; width: 100%; height: 100% }
+div.iat table.stimulus td { height: 100%; text-align: center; vertical-align: middle; display: none; font-size: 30px; font-weight: bold }
+div.iat div.fail { position: absolute; top: 65%; left: 16px; right: 16px; display: none; text-align: center; font-size: 80px; font-weight: bold; color: red; margin-top: 10px }
+div.iat div.footer { display: none; font-weight: bold; text-align: center; margin-top: 40px }
+
+/* Buttons */
+.submitButtons { margin: 32px 0px 10px 0px }
+.buttonControl { padding: 4px 0px 10px 0px }
+.buttonControl input { font-size: 0.86em }
+.buttonBack { text-align: left }
+.buttonNext { text-align: right }
+.buttonSubmit { text-align: right }
+.screenreader { position: absolute; top: -9999px; height: 32px; overflow: hidden }
+.invisible { position: absolute; top: -8888px; width: 1px; height: 1px; overflow: hidden  }
+button.img { padding: 0; border-width: 0; vertical-align: middle; background-color: transparent; line-height: 0.6em }
+button.img::-moz-focus-inner { margin: 0; padding: 0; border-width: 0; }
+button.img img { margin: 0; padding: 0; border: 0 none }
+
+
+
+
+
+/* Content that must not be selected */
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.unselectable input {
+    -webkit-touch-callout: default;
+    -webkit-user-select: auto;
+    -khtml-user-select: default;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+/* Buttons to make invisible */
+.nopacity {
+    zoom: 1;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+/* Answers printing */
+div.print { margin: 0 0 30px 0 }
+div.print div.item.print { margin: 0 0 4px 0; padding-bottom: 4px; border-bottom: 1px solid #CCCCCC }
+div.print div.option.print { margin: 0 0 4px 0 }
+div.print div.item.selected { }
+div.print div.option.unselected,
+div.print div.option.noanswer,
+div.print div.item.noanswer,
+div.print div.content.noanswer { color: #666666 }
+div.print div.prefixed { overflow: hidden }
+div.print div.prefixed div.prefix,
+div.print div.prefixed span.prefix { display: block; float: left; margin-right: 0.4em }
+div.print div.prefixed div.content,
+div.print div.prefixed span.content { display: block; overflow: hidden }
+div.print span.wordgap { font-family: "Courier New","Courier",monospaced; font-size: 1.2em }
+div.print table.question tr.shadeF1 td { background-color: transparent; border-top: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC }
+div.print table.question th.separateR,
+div.print table.question td.separateR { border-left: 2px solid #CCCCCC }
+
+/* Tooltips */
+span.tooltip { display: inline; position: relative }
+span.tooltip span.anchor { white-space: nowrap }
+span.tooltip span.symbol:after { content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANBAMAAACAxflPAAAAFVBMVEVoa/1kZ/2Agv25uv7Iyf7y8v////9k8fclAAAAAXRSTlMAQObYZgAAAEVJREFUCNdNjFEKwDAMQoVB/yWQc2z0QinC7n+ExTFY/XkKKgDNQktktBkMMYGDeTOA5czCRetspnaul+W+3B/e5f/3/T9+9wxXI+KBIwAAAABJRU5ErkJggg==') }
+span.tooltip span.tiptext {
+    position: absolute; left: -99999px; top: -99999px;
+    width: 250px; padding: 0.5em 0.8em 0.7em 0.8em;
+    color: #000000; background-color: #EEEEEE; border: 1px solid #CCCCCC;
+    font-weight: normal; text-align: left;
+    display: block; z-index: 999
+}
+span.tooltip span.tiptext p { margin: 6px 0px 0px 0px }
+span.tooltip span.tiptext p:first-child { margin-top: 0px }
+span.tooltip:hover span.tiptext { left: -100px; top: 1.5em }
+
+/* Border formatting */
+.rounded { border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px }
+.shadow { box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1) }
